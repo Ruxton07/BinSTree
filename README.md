@@ -5,4 +5,3 @@ Do not change the main() method which is provided for testing on repl.it.  You m
 Note: You may want to download the files and implement your code in your favorite IDE.  However, repl.it offers the advantage of being accessible from anywhere.
 
 The code is designed to prompt "Tree insert" for a list of integer key values.  Hit return after each key value.  A negative value indicates the end of the input.  The code then prompts for "Tree remove" for any item keys to be removed from tree.  The remove list is entered as described for the insert.
-
