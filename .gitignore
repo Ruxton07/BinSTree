@@ -1,3 +1,8 @@
 .ccls-cache/
 .config/
 *.o
+
+# Replit things
+.breakpoints
+.nix
+.replit
