@@ -110,71 +110,71 @@ void BST::remove(int item) {
   free(location);
 }
 
-/*
- * Case 0
- * the node is simply removed no other updates necessary.
- */
-void BST::case_0(node *prnt, node *loc) {
-  // if (we are at the root)
-  {
-    // update the root
-  }
-  else {
-    // otherwise simply remove node
-  }
-}
+// /*
+//  * Case 0
+//  * the node is simply removed no other updates necessary.
+//  */
+// void BST::case_0(node *prnt, node *loc) {
+//   // if (we are at the root)
+//   {
+//     // update the root
+//   }
+//   else {
+//     // otherwise simply remove node
+//   }
+// }
 
-/*
- * Case 1
- * We have only one child so promote the child and replace the target
- * node
- */
-void BST::case_1(node *prnt, node *loc) {
-  node *child;
-  // if (the child is on the left?)
-  // point left
-  // else  // must be the right side has child
-  // point right
-  // if (we are at the root handle specialy)
-  {
-    // update the root
-  }
-  else {
-    // if (the node is left child of parent)
-    // promote the left
-    // else // the node is right of parent
-    //     promote right
-  }
-}
+// /*
+//  * Case 1
+//  * We have only one child so promote the child and replace the target
+//  * node
+//  */
+// void BST::case_1(node *prnt, node *loc) {
+//   node *child;
+//   // if (the child is on the left?)
+//   // point left
+//   // else  // must be the right side has child
+//   // point right
+//   // if (we are at the root handle specialy)
+//   {
+//     // update the root
+//   }
+//   else {
+//     // if (the node is left child of parent)
+//     // promote the left
+//     // else // the node is right of parent
+//     //     promote right
+//   }
+// }
 
-/*
- * Case case_2
- * We have to find and promote a successor or predecessor
- */
-void BST::case_2(node *prnt, node *loc) {
-  // temporary pointers for node we are manipulating
+// /*
+//  * Case case_2
+//  * We have to find and promote a successor or predecessor
+//  */
+// void BST::case_2(node *prnt, node *loc) {
+//   // temporary pointers for node we are manipulating
 
-  // Find successor: Step to the right child
-  // Find the min of the subtree on parent's right
+//   // Find successor: Step to the right child
+//   // Find the min of the subtree on parent's right
 
-  // if (found node has no children)
-  //  Replace the target node with the successor node
-  else
-  // Temporarily remove the successor node by replacing it with
-  // its right child, we will replace the node we are removing
-  // with the successor we just removed.
+//   // if (found node has no children)
+//   //  Replace the target node with the successor node
+//   else
+//   // Temporarily remove the successor node by replacing it with
+//   // its right child, we will replace the node we are removing
+//   // with the successor we just removed.
 
-  // if (we are at root)
-  {
-    // then update root
-  }
-  else {
-    // Insert the successor node where the target node we
-    //   are removing is located
-  }
-  // then update the successor child pointers to reflect the old
-  //     target's child pointers.
-}
+//   // if (we are at root)
+//   {
+//     // then update root
+//   }
+//   else {
+//     // Insert the successor node where the target node we
+//     //   are removing is located
+//   }
+//   // then update the successor child pointers to reflect the old
+//   //     target's child pointers.
+// }
 
 /*
  * Display Tree Structure
