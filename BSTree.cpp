@@ -78,8 +78,34 @@ void BST::remove(int item) {
     cout << "Item not present in tree" << endl;
     return;
   }
-  if(root->key_value > item)) {
-    root->left = remove(root->left, k);
+  if(root->key_value > item) {
+    remove(root->p_left, item);
+  } else if(root->key_value < item) {
+    remove(root->p_right, k);
+  }
+
+  if (root->p_left == NULL) {
+      Node* temp = root->p_right;
+      delete root;
+      return;
+  } else if (root->p_right == NULL) {
+      Node* temp = root->p_left;
+      delete root;
+      return;
+  } else {
+    Node* successor = root->right;
+    while (successor->left != NULL) {
+          successorParent = successor;
+          successor = successor->left;
+    }
+    if (successorParent != root)
+      successorParent->left = successor->right;
+    else
+      successorParent->right = successor->right;
+
+    root->key = successor->key;
+    delete successor;
+    return;
   }
   free(location);
 }
